@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela1"
+    android:background="@android:color/background_dark">
+
+    <!-- activity_quiz.xml -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Bandeira de exemplo -->
+
+        <TextView
+            android:id="@+id/txtQuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que país é esse?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/cuba"
+           />
+
+        <RadioGroup
+            android:id="@+id/answerRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFlag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:id="@+id/optionA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="México"
+                />
+            <RadioButton
+                android:id="@+id/optionB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El Salvador"
+               />
+
+            <RadioButton
+                android:id="@+id/optionC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honduras" />
+            <RadioButton
+                android:id="@+id/optionD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuba"
+                android:tag="correct"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerRadio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Enviar Resposta"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

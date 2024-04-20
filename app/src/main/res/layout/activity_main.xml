@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Início"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgAluno"
+            android:layout_width="81dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/imgaluno"
+            />
+
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="25dp"
+            android:text="Victor Vicente"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgAluno"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="50dp"
+            android:text="RA: 2571392222040"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:hint="Insira seu nome: "
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+
+        <!-- Botões para entrar e sair -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIniciar"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="@color/gray"
+            android:text="Iniciar Quiz"
+            android:textColor="@color/white"
+            android:enabled="false"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSair"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:text="Sair" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Ranking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="389dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:text="Ranking" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNome"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="166dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@color/purple"
+                    android:gravity="center"
+                    android:text="Acertos:"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtAcertos"
+                    android:layout_width="166dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:background="@color/darkPurple"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReiniciar"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="290dp"
+                    android:background="@color/gray"
+                    android:text="RESPONDER NOVAMENTE"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginTop="290dp"
+                    android:background="@color/gray"
+                    android:text="TELA PRINCIPAL"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
